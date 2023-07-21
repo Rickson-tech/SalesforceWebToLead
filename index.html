@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Sign up for a Birthday Email</h1>
+
+
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" onsubmit="beforeSubmit()"
+        method="POST">
+
+        <input type=hidden name="oid" value="00D5i00000CHFmQ">
+        <input type=hidden name="retURL" value="http://">
+        <input type="hidden" name="dob__c" id="dob__c">
+
+        <label for="first_name">First Name</label><input id="first_name" name="first_name" size="20" required
+            type="text" />
+
+        <label for="last_name">Last Name</label><input id="last_name" name="last_name" size="20" required type="text" />
+
+        <label for="email">Email</label><input id="email" name="email" size="20" type="text" required />
+
+        <!-- dob:<span class="dateInput dateOnlyInput"><input  id="00N5i00000Q1ntG" name="00N5i00000Q1ntG" size="12" type="text" /></span> -->
+        <label for="dob">DOB</label>
+        <input type="date" id="dob" required>
+        <input type="submit" name="submit">
+
+    </form>
+
+</body>
+
+</html>
